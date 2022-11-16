@@ -1,0 +1,103 @@
+.cards{
+}
+.cards-flex{
+   display: flex; 
+   flex-flow: row wrap;
+   padding-left: 20%;
+   padding-right: 20%;
+}
+
+.news-cardbox {
+  margin: 25px;
+  width: 100%;
+  position: relative;
+  background: #f1f1f1;
+  color: white;
+  box-sizing: border-box;
+  flex: 1 0 21%;
+  &:first-child {
+    margin-right: 20px;
+        }
+
+        &:nth-child(3n) {
+            margin-right: 20px;
+        }
+        &:nth-child(4n) {
+            margin-right: 20px;
+        }&:first-child {
+            margin-right: 20px;
+        }
+  
+  @media only screen and (max-width: 780px){
+      margin-left: 11px;
+      width: 100%;
+      &:first-child {
+          margin-left: 11px;
+      }
+      &:nth-child(5n) {
+          margin-left: 11px;
+      }
+      &:nth-child(4n) {
+          margin-left: 11px;
+      }
+  }
+  .news-channel {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: rgba(26, 34, 66, 0.8);
+      color: black;
+      padding: 4px;
+      font-size: 16px;
+      border-radius: 4px;
+      z-index: 1;
+  }
+  a {
+     color: black;
+      text-decoration: none;
+      .image-container{
+          height: 20vh;
+          overflow: hidden;
+          position: relative;
+          img {
+              max-width: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+          }
+      }
+      .link-saiba-mais{
+          text-decoration: underline; 
+          color: black;
+          margin: 16px;
+          line-height: 24px;
+          font-size: 16px;
+          font-weight: 500;
+      }
+      .newscard-body {
+          padding: 16px;
+          .news-date {
+              font-size: 14px;
+              margin-top: 16px;
+              margin-bottom: 16px;
+              font-weight: 400;
+              color: black;
+          }
+          // .news-title {
+          //     font-size: 22px;
+          //     font-weight: bold;
+          // }
+          .news-description {
+              color: black;
+              line-height: 24px;
+              font-size: 16px;
+              font-weight: 500;
+          }
+      }
+  }
+}
+.pagination{
+    float: right;
+    padding-right: 21%;
+    
+}
